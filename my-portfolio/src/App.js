@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero.jsx';
 
 function App() {
   return(
-    <div className="bg-green-500 text-white p-10 text-3xl font-bold">
-      I want a merge Conflict !!!
-    </div>
+    <main className="font-sans">
+      <Hero />
+      
+    </main>
   );
 }
 
