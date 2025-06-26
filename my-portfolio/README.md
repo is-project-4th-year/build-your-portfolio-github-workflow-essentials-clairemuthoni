@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/nf_lrVjW)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19843719&assignment_repo_type=AssignmentRepo)
+# 🌐 Personal Portfolio Project Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to your **Personal Portfolio Project**! This assignment is designed to help you practice core GitHub and project management skills, including milestones, issues, project boards, branching, commit conventions, pull requests, and resolving merge conflicts.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Project Management Guidelines
 
-### `npm start`
+### ✅ Milestones
+Define major phases or deliverables of your portfolio (e.g., Landing Page, Team Profiles, Admin Panel).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✅ Issues
+Break each milestone into manageable tasks. Link these issues to their related milestone for better tracking.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✅ Project Board
+Create a GitHub project board with columns like:
+- `To Do`
+- `In Progress`
+- `Done`
 
-### `npm test`
+Assign tasks and pull requests to the appropriate columns.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔧 Git Workflow
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔀 Branching
+Use feature branches for each issue. Adopt a consistent naming format such as:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+feature/<issue-number>-short-description
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 💬 Commits
+Use structured, meaningful commit messages:
 
-### `npm run eject`
+```
+<type>(<optional scope>): <short description>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<body>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<footer>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Commit Types: `(use at least 6 of these)`**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Formatting, white space, etc.
+- `refactor`: Code restructure (no feature or bug)
+- `perf`: Performance improvement
+- `test`: Test-related updates
+- `chore`: Non-code updates (e.g., config)
+- `build`: Build system or dependency changes
+- `ci`: Continuous integration changes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Example:**
+```
+feat(portfolio): add responsive navigation bar
 
-## Learn More
+Added a mobile-first responsive nav using Flexbox.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Closes #45
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🔄 Pull Requests & Merge Conflicts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Open a PR for each feature branch.
+- Link the PR to its corresponding issue.
+- Request reviews before merging.
+- Document any merge conflict resolution in the PR or commit message.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Deployment & Documentation
 
-### Making a Progressive Web App
+- Keep the `main` branch always deployable.
+- Deploy using GitHub Pages (mandatory) and any suitable platform (optional).
+- Complete the `Assignment.md` file in this repository by addressing all listed requirements. This document will be used for evaluation.
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📥 Submission Checklist
 
-### Advanced Configuration
+Before submitting your project, ensure the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [ ] Defined milestones for key features
+- [ ] Created and linked issues to milestones
+- [ ] Organized a GitHub project board (To Do / In Progress / Done)
+- [ ] Used structured commit messages
+- [ ] Created separate feature branches for tasks
+- [ ] Opened and merged PRs with meaningful descriptions
+- [ ] Demonstrated conflict resolution (Simulate atleast one)
+- [ ] Deployed the portfolio online
+- [ ] Completed and updated the `Assignment.md` file which will be marked and graded
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
