@@ -85,6 +85,44 @@ export default function Hero() {
           </motion.div>
         </div>
       </section>
+
+      {/* Skills Section */}
+<section id="skills" className="bg-gray-100 text-textDark py-20 px-6 md:px-20">
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1 }}
+    className="max-w-5xl mx-auto text-center"
+  >
+    <h2 className="text-3xl md:text-4xl font-bold mb-6">Skills & Technologies</h2>
+    <p className="text-lg text-gray-700 mb-12">
+      Tools and technologies I’ve worked with:
+    </p>
+  </motion.div>
+
+  <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1.2 }}
+    className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center"
+  >
+    {[
+      "Python", "JavaScript", "React", "Tailwind CSS",
+      "Framer Motion", "NumPy", "Pandas", "Scikit-learn",
+      "TensorFlow", "Git & GitHub", "Figma", "SQL"
+    ].map((skill, index) => (
+      <div
+        key={index}
+        className="bg-white shadow-md rounded-xl py-6 px-4 hover:shadow-xl transition duration-300"
+      >
+        {skill}
+      </div>
+    ))}
+  </motion.div>
+</section>
+
     </div>
   );
 }
