@@ -123,6 +123,63 @@ export default function Hero() {
   </motion.div>
 </section>
 
+{/* Contact & CV Section */}
+<section id="contact" className="bg-white text-textDark py-20 px-6 md:px-20">
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1 }}
+    className="max-w-4xl mx-auto text-center"
+  >
+    <h2 className="text-3xl md:text-4xl font-bold mb-6">Get in Touch</h2>
+    <p className="text-lg text-gray-700 mb-8">
+      I’d love to connect! Whether you have a question or just want to say hi, feel free to reach out.
+    </p>
+
+    {/* CV Download Button */}
+    <a
+      href="/claire_cv.pdf" // Make sure this PDF is placed inside /public folder
+      download
+      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition"
+    >
+      Download CV
+    </a>
+
+    {/* Contact Icons */}
+    <div className="mt-10 flex justify-center gap-6 text-2xl">
+      {/* GitHub */}
+      <a
+        href="https://github.com/ClaireMuthoni"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-700 hover:text-black transition"
+      >
+        <i className="fab fa-github"></i>
+      </a>
+
+      {/* LinkedIn */}
+      <a
+        href="https://www.linkedin.com/in/claire-muthoni-5322a7358/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-700 hover:text-blue-900 transition"
+      >
+        <i className="fab fa-linkedin"></i>
+      </a>
+
+      {/* Email */}
+      <a
+        href="mailto:clairemuthoni@example.com"
+        className="text-red-600 hover:text-red-800 transition"
+      >
+        <i className="fas fa-envelope"></i>
+      </a>
+    </div>
+  </motion.div>
+</section>
+
+
     </div>
   );
 }
